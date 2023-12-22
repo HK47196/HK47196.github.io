@@ -1,0 +1,42 @@
+baseURL = 'https://hk47196.github.io/'
+languageCode = 'en-us'
+title = '~'
+theme = 'etch'
+
+[params]
+  subtitle = 'Home, sweet home.'
+  dark = "auto"
+  highlight = true
+
+[menu]
+  [[menu.main]]
+    identifier = "posts"
+    name = "posts"
+    title = "posts"
+    url = "/"
+    weight = 10
+
+  [[menu.main]]
+    identifier = "about"
+    name = "about"
+    title = "about"
+    url = "/about/"
+    weight = 20
+
+  [[menu.main]]
+    identifier = "projects"
+    name = "projects"
+    title = "projects"
+    url = "/projects/"
+    weight = 30
+
+  [[menu.main]]
+    identifier = "resumé"
+    name = "resumé"
+    title = "resumé"
+    url = "/files/resume.pdf"
+    weight = 40
+
+
+[permalinks]
+  posts = "/:title/"
