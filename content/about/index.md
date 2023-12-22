@@ -1,7 +1,7 @@
 # About me
 
 ## Introduction
-Hello! I'm Roger. With nearly fifteen years of programming experience, spanning from system-level C++ development to contemporary web technologies.
+Hello! I'm Roger. I have nearly fifteen years of programming experience, spanning from system-level C++ development to contemporary web technologies.
 
 ## My Journey
 My adventure began with C++, a language that taught me the importance of resource and memory management. Over the years, I've embraced various technologies, constantly expanding my toolkit.
