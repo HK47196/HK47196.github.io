@@ -10,4 +10,9 @@ Note that it was created for Webkit-based browsers, not tested on Mozilla which 
 
 ## Open Source contributions
 Additionally, various open source contributions made over the years can be found
-on my Github profile.
+on my [Github profile](https://github.com/HK47196).
+
+## StackOverflow
+I have had an account on StackOverflow for nearly 13 years as of the last time I
+updated my page. While I'm not very active, you can find the account
+[here](https://stackoverflow.com/users/754018/roxerio).
