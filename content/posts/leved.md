@@ -39,6 +39,8 @@ Therefore, I'll outline some key features for LevEd:
 * Vertex painting. Also, arbitrary vertex data?
 * Useful tools such as extruding, bevels, and so forth.
 * GLTF-only export, designed for direct import into Godot.
+* Not a prototyping tool. While it will be usable for this, it will firstly be a
+  tool for creating whole levels.
 
 With regards to the Trenchbroom UV, taken from its manual:
 
