@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.Language.Lang }}">
+	{{- partial "head.html" . -}}
+	<body>
+		{{- partial "header.html" . -}}
+		<main id="content">
+			{{- block "main" . }}{{- end }}
+		</main>
+		{{- partial "footer.html" . -}}
+	</body>
+	<div id="lightbox">
+		<img src="" alt="Image" id="lightboxImage">
+		<button id="closeButton">&times;</button>
+	</div>
+	<script type="text/javascript" src="/js/lightbox.js"></script>
+	<link rel="stylesheet" href="/css/lightbox.css">
+</html>
