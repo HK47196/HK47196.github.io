@@ -1,7 +1,7 @@
 +++
 title = 'A design for LevEd, a Level Editor'
 date = 2023-12-26T08:48:30-05:00
-draft = false
+draft = true
 +++
 
 In my spare time I enjoy tinkering on video game prototypes. A wall I've
