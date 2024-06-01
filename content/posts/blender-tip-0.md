@@ -1,5 +1,5 @@
 +++
-title = 'Blender Tip #1'
+title = 'Blender Tip 1'
 date = 2024-06-01T16:47:31-04:00
 draft = false
 +++
