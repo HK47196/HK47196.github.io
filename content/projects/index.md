@@ -8,6 +8,9 @@ better understanding specific skills and technologies.
 Vapors is a demo clone of the Steam store search page. It was built in an afternoon using React, with miragejs to mock the backend.
 Note that it was created for Webkit-based browsers, not tested on Mozilla which may have some issues.
 
+## [Finance](https://hk47196.github.io/vapors/)
+Sample finance app frontend for learning purposes. React+JS
+
 ## [phpBB 3.3.x OIDC Provider](https://github.com/HK47196/phpbb-oidc-provider)
 WIP extension to make a phpBB forum function as an OIDC provider.
 
