@@ -3,6 +3,9 @@
 Here is where I put some projects I've made in my spare time for learning or
 better understanding specific skills and technologies.
 
+## [MicroRules, a tiny C# DSL](https://github.com/HK47196/MicroRules)
+A small DSL for writing expressions in that compile into callable C# functions.
+Includes a lexer and parser for the language.
 
 ## [Vapors](https://hk47196.github.io/vapors/)
 Vapors is a demo clone of the Steam store search page. It was built in an afternoon using React, with miragejs to mock the backend.
@@ -13,6 +16,7 @@ Sample finance app frontend for learning purposes. React+JS
 
 ## [phpBB 3.3.x OIDC Provider](https://github.com/HK47196/phpbb-oidc-provider)
 WIP extension to make a phpBB forum function as an OIDC provider.
+
 
 ## Open Source contributions
 Additionally, various open source contributions made over the years can be found
