@@ -7,6 +7,11 @@ better understanding specific skills and technologies.
 A small DSL for writing expressions in that compile into callable C# functions.
 Includes a lexer and parser for the language.
 
+## [Tolkien Quest Character Sheet](https://hk47196.github.io/tolkien-quest/)
+Character sheet based upon the old Tolkien Quest books. Includes saving &
+loading, allows the entire form to be filled out. Attempts to look as close as
+possible to the character sheet page itself.
+
 ## [Vapors](https://hk47196.github.io/vapors/)
 Vapors is a demo clone of the Steam store search page. It was built in an afternoon using React, with miragejs to mock the backend.
 Note that it was created for Webkit-based browsers, not tested on Mozilla which may have some issues.
