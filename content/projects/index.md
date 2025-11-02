@@ -7,6 +7,13 @@ better understanding specific skills and technologies.
 A small DSL for writing expressions in that compile into callable C# functions.
 Includes a lexer and parser for the language.
 
+## [URL Shortener](https://github.com/HK47196/url-shortener)
+
+A URL shortening service built with TypeScript, Express, React, PostgreSQL.
+Allows URL revocation & domain blacklist, tracks click analytics. Has an admin
+dashboard.
+For educational purposes.
+
 ## [Tolkien Quest Character Sheet](https://hk47196.github.io/tolkien-quest/)
 Character sheet based upon the old Tolkien Quest books. Includes saving &
 loading, allows the entire form to be filled out. Attempts to look as close as
