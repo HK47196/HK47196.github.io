@@ -16,13 +16,13 @@ Using a union with `uint8_t` (`byte`) array greatly helped improve decompilation
 
 Before:
 
-![Selection_174.jpg](images/ghidra_lessons/94dc15ffc79b4bdd31ab8ab804ae135953fe21e4.jpg)
+![Selection_174.jpg](/images/94dc15ffc79b4bdd31ab8ab804ae135953fe21e4.jpg)
 
 The `+ -10` part is because the `.partySlotToCharacterIndex` 
 
 After:
 
-![Selection_173.jpg](images/ghidra_lessons/2d62fe10135788e49b603281120a7d30a741eab8.jpg)
+![Selection_173.jpg](/images/2d62fe10135788e49b603281120a7d30a741eab8.jpg)
 
 A few other tips:
 
