@@ -1,5 +1,5 @@
 +++
-title = 'Tsugaru Tracing'
+title = 'Reverse Engineering DOS Games on FM Towns'
 date = 2025-12-04T12:48:14-05:00
 draft = false
 +++
