@@ -12,6 +12,11 @@ OMF object files compatible with the original IBM standard, TIS Specification
 A small DSL for writing expressions in that compile into callable C# functions.
 Includes a lexer and parser for the language.
 
+## [Tsugaru FM-Towns Emulator Fork](https://github.com/HK47196/TOWNSEMU/tree/feature/tracing)
+Fork of the Tsugaru emulator that adds instruction-level tracing of memory
+reads/writes, CALLs, and RETs for the purpose of aiding reverse engineering.
+Excellent emulator, major thanks to the original developer.
+
 ## [URL Shortener](https://github.com/HK47196/url-shortener)
 
 A URL shortening service built with TypeScript, Express, React, PostgreSQL.
