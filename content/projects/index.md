@@ -3,6 +3,11 @@
 Here is where I put some projects I've made in my spare time for learning or
 better understanding specific skills and technologies.
 
+## [OMF Parser](https://github.com/HK47196/OMF-Parser)
+A python library/application capable of parsing and dumping information about
+OMF object files compatible with the original IBM standard, TIS Specification
+1.1, and many extensions to the format.
+
 ## [MicroRules, a tiny C# DSL](https://github.com/HK47196/MicroRules)
 A small DSL for writing expressions in that compile into callable C# functions.
 Includes a lexer and parser for the language.
