@@ -3,6 +3,9 @@
 Here is where I put some projects I've made in my spare time for learning or
 better understanding specific skills and technologies.
 
+## [P3 Loader](https://github.com/HK47196/ghidra-p3-exp-loader)
+Ghidra loader for the Phar Lap P3 DOS Extender format
+
 ## [OMF Parser](https://github.com/HK47196/OMF-Parser)
 A python library/application capable of parsing and dumping information about
 OMF object files compatible with the original IBM standard, TIS Specification
