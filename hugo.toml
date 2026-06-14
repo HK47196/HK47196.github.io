@@ -1,5 +1,5 @@
 baseURL = 'https://hk47196.github.io/'
-languageCode = 'en-us'
+locale = 'en-us'
 title = '~'
 theme = 'etch'
 
@@ -7,6 +7,10 @@ theme = 'etch'
   subtitle = 'Home, sweet home.'
   dark = "auto"
   highlight = true
+
+[params.author]
+  name = 'Roger Waggoner'
+  email = 'rogerswaggoner@gmail.com'
 
 [menu]
   [[menu.main]]
