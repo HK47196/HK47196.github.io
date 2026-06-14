@@ -1,5 +1,5 @@
 baseURL = 'https://hk47196.github.io/'
-locale = 'en-us'
+languageCode = 'en-us'
 title = '~'
 theme = 'etch'
 
