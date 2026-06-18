@@ -32,9 +32,7 @@ At startup, AbyssX can build a virtual `DATA/AVATAR` archive from local override
 
 Plenty.
 
-AddressSanitizer is especially noisy right now. Some crashes are ordinary reimplementation bugs. Others come from recovered original logic that assumes indexes, tables, and resource data are valid, and then skips the bounds checks a native program really wants. The original PlayStation executable ran in a different environment, with different memory layout and failure modes. In an ASan build, those assumptions tend to explode immediately.
-
-So first-level exploration is not a claim that the game is done, or even close. Some behavior is incomplete, some edge cases are wrong, and some systems only cover the paths needed to reach this point.
+AddressSanitizer is especially noisy right now. Some crashes are ordinary reimplementation bugs. Others come from recovered original out of bounds indexing, buffer overflows, etc.,
 
 Still, it is a good milestone. Enough of the recovered game is running through native systems that the result feels like a game again. It's like seeing light at the end of a very, very long tunnel.
 
