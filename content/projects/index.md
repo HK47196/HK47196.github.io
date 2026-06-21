@@ -2,6 +2,8 @@
 
 Selected projects showing troubleshooting, QA, systems, application support, parsing, and full-stack development skills.
 
+For a concise production support example, see [Application Support Case Studies](/application-support-case-studies/).
+
 ## [P3 Loader](https://github.com/HK47196/ghidra-p3-exp-loader)
 
 Ghidra loader for Phar Lap P3 flat-model `.EXP` executables.

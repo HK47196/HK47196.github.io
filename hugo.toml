@@ -35,6 +35,13 @@ theme = 'etch'
     weight = 30
 
   [[menu.main]]
+    identifier = "case-studies"
+    name = "case studies"
+    title = "application support case studies"
+    url = "/application-support-case-studies/"
+    weight = 35
+
+  [[menu.main]]
     identifier = "resumé"
     name = "resumé"
     title = "resumé"
