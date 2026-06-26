@@ -1,0 +1,115 @@
+.chroma {
+    color: var(--text);
+    background-color: #151515;
+}
+
+.chroma .err {
+    color: var(--danger);
+}
+
+.chroma .lntd {
+    vertical-align: top;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+.chroma .lntable {
+    display: block;
+    overflow: auto;
+    width: auto;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    border-spacing: 0;
+}
+
+.chroma .hl {
+    display: block;
+    background-color: #2c291d;
+}
+
+.chroma .lnt,
+.chroma .ln {
+    margin-right: 0.4em;
+    padding: 0 0.4em;
+    color: var(--quiet);
+}
+
+.chroma .k,
+.chroma .kc,
+.chroma .kd,
+.chroma .kn,
+.chroma .kp,
+.chroma .kr,
+.chroma .kt {
+    color: var(--blue);
+}
+
+.chroma .na,
+.chroma .nc,
+.chroma .nd,
+.chroma .ne,
+.chroma .nf,
+.chroma .nx,
+.chroma .nt {
+    color: var(--green);
+}
+
+.chroma .s,
+.chroma .sa,
+.chroma .sb,
+.chroma .sc,
+.chroma .dl,
+.chroma .sd,
+.chroma .s2,
+.chroma .se,
+.chroma .sh,
+.chroma .si,
+.chroma .sx,
+.chroma .sr,
+.chroma .s1,
+.chroma .ss {
+    color: var(--amber);
+}
+
+.chroma .m,
+.chroma .mb,
+.chroma .mf,
+.chroma .mh,
+.chroma .mi,
+.chroma .il,
+.chroma .mo {
+    color: #c7b7ff;
+}
+
+.chroma .o,
+.chroma .ow {
+    color: var(--text-strong);
+}
+
+.chroma .c,
+.chroma .ch,
+.chroma .cm,
+.chroma .c1,
+.chroma .cs,
+.chroma .cp,
+.chroma .cpf {
+    color: var(--quiet);
+}
+
+.chroma .gd {
+    color: var(--danger);
+}
+
+.chroma .gi {
+    color: var(--green);
+}
+
+.chroma .ge {
+    font-style: italic;
+}
+
+.chroma .gs {
+    font-weight: 700;
+}

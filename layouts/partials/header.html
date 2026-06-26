@@ -1,0 +1,17 @@
+<header id="banner" class="site-header">
+    <div class="site-id">
+        <a class="site-mark" href="{{ "/" | relURL }}">{{ .Site.Title }}</a>
+        {{ with .Site.Params.subtitle }}
+        <span class="site-subtitle">{{ . }}</span>
+        {{ end }}
+    </div>
+    <nav class="site-nav" aria-label="Primary navigation">
+        <ul>
+            {{ range .Site.Menus.main.ByWeight -}}
+            <li>
+                {{ .Pre }}<a href="{{ .URL | relURL }}" title="{{ .Title }}">{{- .Name -}}</a>{{ .Post }}
+            </li>
+            {{- end }}
+        </ul>
+    </nav>
+</header>

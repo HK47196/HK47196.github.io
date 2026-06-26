@@ -1,16 +1,23 @@
 +++
 title = "Application Support Case Studies"
+layout = "case-study"
 +++
 
-These case studies are short examples of production troubleshooting, QA-style investigation, and application support work: taking a user report, checking the right logs, isolating scope, validating the fix, and communicating what changed.
+These case studies show application-support work at incident scale. The point is to show what I checked and how I knew the fix landed.
+
+{{< callout type="note" title="Scope note" >}}
+The useful checks were plain ones: logs, a comparison client, a known prior issue, the maintained fork, and a user-visible refresh.
+{{< /callout >}}
 
 ## Resolving a Production Matrix Web Client Issue in 20 Minutes
+
+{{< flow title="Scope isolation" items="user report|Synapse logs|comparison Matrix client|hosted web client fork|rebuild and redeploy|refresh validation" >}}
 
 ### Context
 
 A client reported a production rendering problem in their hosted Matrix web client. I treated the report as an application support issue and started by separating the likely layers: Synapse, Matrix generally, and the client's hosted web client fork.
 
-### Impact
+### Problem / impact
 
 The issue affected visible behavior in a production chat client. I kept the investigation focused on observable application behavior and non-sensitive diagnostics while working to restore the hosted client quickly.
 
@@ -30,6 +37,14 @@ The issue affected visible behavior in a production chat client. I kept the inve
 ### Resolution
 
 I made the fix in the maintained hosted client fork, rebuilt the web client, redeployed the updated build, and asked users to refresh.
+
+### Validation checklist
+
+- [x] Checked Synapse and homeserver logs for backend failure signals.
+- [x] Compared behavior against another Matrix client.
+- [x] Narrowed likely fault to the hosted web client fork.
+- [x] Rebuilt and redeployed the updated hosted client.
+- [x] Asked users to refresh and confirm the fixed build was served.
 
 ### Validation / outcome
 

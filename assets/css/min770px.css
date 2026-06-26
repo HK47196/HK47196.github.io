@@ -1,0 +1,44 @@
+@media (min-width: 770px) {
+    body {
+        padding: 2rem 1.5rem 3rem;
+    }
+
+    .site-header {
+        flex-direction: row;
+        align-items: baseline;
+        justify-content: space-between;
+    }
+
+    main#content h1 {
+        font-size: 2rem;
+    }
+
+    .home-intro h1 {
+        font-size: 1.95rem;
+    }
+
+    .home-grid {
+        grid-template-columns: minmax(0, 1.2fr) minmax(15rem, 0.8fr);
+        gap: 1.8rem 2rem;
+    }
+
+    .index-section-wide {
+        grid-row: span 2;
+    }
+
+    .case-layout {
+        grid-template-columns: minmax(0, 1fr) 15.5rem;
+        align-items: start;
+    }
+
+    .case-rail {
+        position: sticky;
+        top: 1.5rem;
+        grid-column: 2;
+    }
+
+    .case-body {
+        grid-column: 1;
+        grid-row: 1;
+    }
+}

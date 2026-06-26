@@ -5,7 +5,7 @@ Hello, I'm Roger. I focus on software support and QA analysis, with full-stack d
 
 My best work starts with making a vague issue testable. I reproduce the problem, compare expected and actual behavior, check logs, data, and configuration, verify the fix, and write notes clear enough for someone else to use later.
 
-## Support and QA evidence
+## Support and QA
 
 - Bug reproduction and regression verification
 - SQL/data checks and REST API troubleshooting

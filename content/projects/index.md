@@ -46,7 +46,7 @@ MCP server integration for Ghidra.
 
 - Connects MCP clients to Ghidra reverse-engineering functionality through a tooling/integration layer.
 - Uses Python bridge code, Ghidra integration pieces, MCP server concepts, build documentation, tests, and test infrastructure.
-- Kept here as tooling/integration evidence rather than a claim about production support experience.
+- Kept here as tooling and integration work rather than a claim about production support experience.
 
 ## [phpBB 3.3.x OIDC Provider](https://github.com/HK47196/phpbb-oidc-provider)
 
@@ -55,7 +55,7 @@ Client-created WIP extension to make a phpBB forum function as an OIDC provider.
 - Addresses an integration need inside an existing PHP/phpBB application rather than a greenfield app.
 - Uses PHP, phpBB extension structure, OAuth2/OpenID Connect concepts, Composer dependencies, migrations, configuration, and encrypted token/code handling.
 - Repository notes that it was created for a client and is not ready for general use; I treat it as WIP integration work.
-- The support angle is practical: existing application code, framework conventions, and security-sensitive configuration.
+- The practical work is fitting the extension into existing phpBB code while respecting framework conventions and security-sensitive configuration.
 
 ## [Tsugaru FM-Towns Emulator Fork](https://github.com/HK47196/TOWNSEMU/tree/feature/tracing)
 
@@ -63,7 +63,7 @@ Fork of the Tsugaru emulator that adds instruction-level tracing of memory reads
 
 - Adds targeted diagnostics to an existing C++ emulator instead of building a separate tracing tool.
 - Helps investigate runtime behavior by making memory access and call flow visible.
-- The support angle is systems-level debugging and careful changes in someone else's codebase.
+- The practical work is systems-level debugging inside someone else's codebase.
 
 ## Other projects
 

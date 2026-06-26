@@ -1,0 +1,8 @@
+{{- $type := "note" -}}
+{{- with .Get "type" -}}{{- $type = . -}}{{- else -}}{{- with .Get 0 -}}{{- $type = . -}}{{- end -}}{{- end -}}
+{{- $title := "" -}}
+{{- with .Get "title" -}}{{- $title = . -}}{{- end -}}
+<aside class="callout callout-{{ $type | urlize }}">
+    {{ with $title }}<p class="callout-title">{{ . }}</p>{{ end }}
+    <div class="callout-body">{{ .Inner | markdownify }}</div>
+</aside>

@@ -1,0 +1,21 @@
+{{ define "main" }}
+<article class="article case-study">
+    <header class="article-header case-header">
+        <h1>{{ .Title }}</h1>
+    </header>
+    <div class="case-layout">
+        <aside class="case-rail" aria-label="Case summary">
+            <h2>At a glance</h2>
+            <ul>
+                <li><strong>Report:</strong> production Matrix web client rendering problem</li>
+                <li><strong>Scope:</strong> hosted client fork, not Synapse or Matrix generally</li>
+                <li><strong>Signal:</strong> logs plus comparative client testing</li>
+                <li><strong>Outcome:</strong> rebuilt and redeployed in roughly 20 minutes</li>
+            </ul>
+        </aside>
+        <div class="article-body case-body">
+            {{- .Content -}}
+        </div>
+    </div>
+</article>
+{{ end }}
