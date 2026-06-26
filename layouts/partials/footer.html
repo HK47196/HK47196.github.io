@@ -1,0 +1,5 @@
+<footer id="footer" class="site-footer">
+    <span>{{ with .Site.Params.author.name }}{{ . }}{{ end }}</span>
+    <span><a href="{{ "index.xml" | relURL }}">rss</a></span>
+    <span><a href="{{ "about/" | relURL }}">contact</a></span>
+</footer>

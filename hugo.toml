@@ -4,9 +4,10 @@ title = '~'
 theme = 'etch'
 
 [params]
-  subtitle = 'Home, sweet home.'
-  dark = "auto"
+  description = 'Roger Waggoner: software support, QA analysis, reverse engineering, parsers, and small tools.'
+  dark = "on"
   highlight = true
+  mainSections = ["posts"]
 
 [params.author]
   name = 'Roger Waggoner'
@@ -15,9 +16,9 @@ theme = 'etch'
 [menu]
   [[menu.main]]
     identifier = "posts"
-    name = "posts"
-    title = "posts"
-    url = "/"
+    name = "writing"
+    title = "writing"
+    url = "/posts/"
     weight = 10
 
   [[menu.main]]

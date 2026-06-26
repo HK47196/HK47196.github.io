@@ -1,31 +1,41 @@
-const images = Array.from(document.querySelectorAll('article img')).filter(image => image.naturalWidth > image.width);
-const lightbox = document.getElementById('lightbox');
-const closeButton = document.getElementById('closeButton');
+const setupLightbox = () => {
+  const lightbox = document.getElementById('lightbox');
+  const lightboxImage = document.getElementById('lightboxImage');
+  const closeButton = document.getElementById('closeButton');
 
-const close_lightbox = (event) => {
-  if (lightbox.style.display !== 'none') {
-    lightbox.style.display = 'none';
+  if (!lightbox || !lightboxImage || !closeButton) {
+    return;
   }
-	document.removeEventListener('click', close_lightbox);
+
+  const closeLightbox = () => {
+    lightbox.setAttribute('aria-hidden', 'true');
+    lightboxImage.removeAttribute('src');
+  };
+
+  const openLightbox = (image) => {
+    lightboxImage.src = image.src;
+    lightbox.setAttribute('aria-hidden', 'false');
+  };
+
+  Array.from(document.querySelectorAll('article img'))
+    .filter((image) => image.naturalWidth > image.clientWidth)
+    .forEach((image) => {
+      image.setAttribute('data-scaled-down', '');
+      image.addEventListener('click', (event) => {
+        event.stopPropagation();
+        openLightbox(image);
+      });
+    });
+
+  closeButton.addEventListener('click', closeLightbox);
+  lightbox.addEventListener('click', closeLightbox);
+  lightboxImage.addEventListener('click', closeLightbox);
+
+  document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape') {
+      closeLightbox();
+    }
+  });
 };
 
-
-images.forEach(image => {
-	image.setAttribute('data-scaled-down', '');
-  image.addEventListener('click', () => {
-    const imageSrc = image.src;
-    lightboxImage.src = imageSrc;
-    lightbox.style.display = 'block';
-		event.stopPropagation(); // Prevent click from bubbling up to document
-		document.addEventListener('click', close_lightbox);
-  });
-});
-
-// Close lightbox on Esc key press
-document.addEventListener('keydown', (event) => {
-  if (event.key === 'Escape' && lightbox.style.display === 'block') {
-    lightbox.style.display = 'none';
-  }
-	document.removeEventListener('click', close_lightbox);
-});
-
+window.addEventListener('load', setupLightbox);

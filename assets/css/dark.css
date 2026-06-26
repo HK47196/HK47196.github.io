@@ -1,0 +1,9 @@
+{{ if not (eq .Site.Params.dark "on") -}}
+@media (prefers-color-scheme: dark) {
+{{ end -}}
+html {
+    scrollbar-color: var(--quiet) var(--bg-panel);
+}
+{{- if not (eq .Site.Params.dark "on") -}}
+}
+{{- end -}}

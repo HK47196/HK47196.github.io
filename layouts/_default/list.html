@@ -1,0 +1,15 @@
+{{ define "main" }}
+<section class="article article-standard archive-page">
+    <header class="article-header">
+        <h1>{{ .Title }}</h1>
+        {{ with .Content }}
+        <div class="article-summary">{{ . }}</div>
+        {{ end }}
+    </header>
+    <ol class="post-list archive-list">
+        {{- range .Pages.ByDate.Reverse }}
+            {{ .Render "li" }}
+        {{- end }}
+    </ol>
+</section>
+{{ end }}

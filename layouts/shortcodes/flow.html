@@ -1,0 +1,10 @@
+{{- $items := slice -}}
+{{- with .Get "items" -}}{{- $items = split . "|" -}}{{- end -}}
+<figure class="flow-diagram">
+    {{ with .Get "title" }}<figcaption>{{ . }}</figcaption>{{ end }}
+    <ol>
+        {{ range $items }}
+        <li>{{ trim . " " | markdownify }}</li>
+        {{ end }}
+    </ol>
+</figure>

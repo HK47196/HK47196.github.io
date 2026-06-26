@@ -1,0 +1,49 @@
+{{ define "main" }}
+{{ $posts := where site.RegularPages "Section" "posts" }}
+<section class="home-page">
+    <header class="home-intro">
+        <h1>{{ .Site.Params.author.name }}</h1>
+        {{ with .Content }}
+        <div class="home-lede">
+            {{ . }}
+        </div>
+        {{ end }}
+    </header>
+
+    <div class="home-grid">
+        <section class="index-section index-section-wide" aria-labelledby="latest-writing">
+            <h2 id="latest-writing">Writing</h2>
+            <ol class="post-list compact-list">
+                {{ range first 7 ($posts.ByDate.Reverse) }}
+                <li>
+                    <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006-01-02" }}</time>
+                    <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+                    {{ with .Params.summary }}
+                    <p>{{ . }}</p>
+                    {{ end }}
+                </li>
+                {{ end }}
+            </ol>
+            <p class="more-link"><a href="{{ "posts/" | relURL }}">all writing</a></p>
+        </section>
+
+        <section class="index-section" aria-labelledby="projects-index">
+            <h2 id="projects-index">Projects</h2>
+            <ul class="link-list">
+                <li><a href="https://github.com/HK47196/ghidra-p3-exp-loader">P3 Loader</a><span>Ghidra loader for Phar Lap P3 executables</span></li>
+                <li><a href="https://github.com/HK47196/MicroRules">MicroRules</a><span>tiny C# expression language</span></li>
+                <li><a href="https://github.com/HK47196/OMF-Parser">OMF Parser</a><span>Python parser/dumper for legacy object files</span></li>
+                <li><a href="{{ "projects/" | relURL }}">more projects</a><span>Ghidra loaders, parsers, web apps, and integration work</span></li>
+            </ul>
+        </section>
+
+        <section class="index-section" aria-labelledby="case-index">
+            <h2 id="case-index">Case Studies</h2>
+            <ul class="link-list">
+                <li><a href="{{ "application-support-case-studies/" | relURL }}">Application support case study</a><span>production Matrix web client issue, scoped and fixed in roughly 20 minutes</span></li>
+                <li><a href="{{ "about/" | relURL }}">How I work</a><span>reproduction, logs, data checks, API troubleshooting, validation notes</span></li>
+            </ul>
+        </section>
+    </div>
+</section>
+{{ end }}
