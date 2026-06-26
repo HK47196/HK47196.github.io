@@ -7,7 +7,7 @@
     <p>{{ . }}</p>
     {{ else }}
     {{ with .Summary }}
-    <p>{{ . | plainify | truncate 150 }}</p>
+    <p>{{ . | plainify | htmlUnescape | truncate 150 }}</p>
     {{ end }}
     {{ end }}
 </li>
