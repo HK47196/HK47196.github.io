@@ -342,7 +342,8 @@ main#content th {
     text-align: left;
 }
 
-main#content img {
+main#content img,
+main#content video {
     display: block;
     max-width: 100%;
     height: auto;
