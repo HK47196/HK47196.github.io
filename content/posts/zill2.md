@@ -24,10 +24,10 @@ cold-booted the game, and tried the same scene again.
 It still crashed.
 
 `MEMSIZE` made the extra memory available, but the game was not actually using
-it. Its C runtime still reserved a fixed 17 MiB heap—the `UserSbrk` block it uses
-for dynamic allocations—exactly as it did on the original PSP memory layout.
-The remaining memory was sitting there untouched while the allocator returned
-failure.
+it. Its C runtime still reserved a fixed 17 MiB heap in the `UserSbrk` block it
+uses for dynamic allocations, exactly as it did on the original PSP memory
+layout. The remaining memory was sitting there untouched while the allocator
+returned failure.
 
 I found the heap-size value in the executable and increased it to 49 MiB. That
 keeps the game's original 17 MiB and adds the extra 32 MiB made available by the
@@ -37,12 +37,9 @@ have not reproduced an out-of-memory failure since.
 {{< figure src="/images/zill2-combat.webp" alt="The translated game in combat against two monsters" caption="Combat in the translated build." >}}
 
 I can't prove that this is why the developers used 16-bit dialogue offsets, but
-it does make the original limit a bit more understandable. This is a game made
-for a memory-constrained device, and they were very tight with space all over
-the place.
-
-The heap was only one example. Making the message banks larger does not make all
-of the smaller buffers that receive their text any larger.
+the game is tight with memory in more places than one. Making the message banks
+larger does not make all of the smaller buffers that receive their text any
+larger.
 
 One guild-board posting produced a particularly strange failure. The list of
 jobs looked correct when I opened it, but after accepting one, all of the row
@@ -87,10 +84,10 @@ tried several of them in PPSSPP. Ubuntu Condensed and Roboto Condensed were
 promising. PixAntiqua looked nice, but used too much horizontal space once it
 was in the actual UI.
 
-I eventually went back to Tahoma at 16 PPEM. It is not an exciting choice, but
-it is compact, readable, and looks appropriate for a PSP game. The replacement
-is now part of the normal build, so I do not have to reinstall it every time the
-game is rebuilt.
+I eventually went back to Tahoma, rendered at 16 pixels per em (PPEM). It is not
+an exciting choice, but it is compact, readable, and looks appropriate for a
+PSP game. The replacement is now part of the normal build, so I do not have to
+reinstall it every time the game is rebuilt.
 
 {{< figure src="/images/zill2-magic-menu.webp" alt="The translated character Magic menu with Teleport selected" caption="Selecting a spell from the character Magic menu." >}}
 
@@ -108,7 +105,7 @@ them, but finding the function is not the same as proving every caller safe.
 Overconfidently, I'd say I'm not too far away from being complete. I've played
 about ten hours of the current build, and most of what I am finding now is odd
 wording, untranslated text, or another very specific UI limit. There is still
-plenty of QA left, but it is starting to feel more like a translated game and
-less like a collection of patches.
+plenty of QA left, but it is starting to feel like a game I could actually hand
+to someone.
 
 I'm sure the next menu will punish me for writing that.
