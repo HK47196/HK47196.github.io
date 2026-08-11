@@ -14,21 +14,17 @@ remake, and was expanded again for the PSP. None of these were released outside
 of Japan. There was a prequel released in English, but from what I understand it
 is mostly unrelated.
 
-I can't really comment on the game yet, but it seems quite interesting—perhaps
-not too dissimilar from the SaGa games in uniqueness. The translation has ended
-up involving archive formats, scene scripts, executable patches, and a lot of
-PPSSPP debugging.
+I can't really comment on the game yet, but it seems quite interesting and
+perhaps not too dissimilar from the SaGa games in uniqueness. The translation
+has ended up involving archive formats, scene scripts, executable patches, and a
+lot of PPSSPP debugging.
 
-I've made extensive use of AI, but feeding it Japanese text line by line mostly
-produces junk. A line may depend on its speaker, the previous branch of a
-conversation, a name inserted at runtime, or the size of the box it will appear
-in. An isolated row in a spreadsheet has none of that.
+I've made extensive use of AI, tho feeding it Japanese text line by line mostly
+produces junk. For proper dialogue translation, the AI needs as much context as
+possible: speakers, full dialogue, branches taken to this specific line, etc.,
+An isolated row in a spreadsheet has none of that.
 
-I made a translation dashboard to keep the context together. It lets me work on
-a scene rather than an isolated line, look at related text and references, and
-track what still needs review. AI helps, but most of the useful work is making
-sure it gets enough context and that bad output does not quietly make it into
-the build.
+I made a translation dashboard to assist.
 
 {{< figure src="/images/zill-translation-dashboard.webp" alt="The Zill O'll translation dashboard showing translation units and review progress" caption="My translation dashboard, used to track context-rich units through translation and review." >}}
 
@@ -159,8 +155,7 @@ and reflowed the affected text.
 {{< figure src="/images/zill-buffer-overflow-crash.webp" alt="PPSSPP reporting an invalid memory access in Zill O'll Infinite Plus" caption="What happens when I don't keep a close enough eye on string sizes." >}}
 
 Some fixes require executable patches. Others are just rules and checks in the
-tools. Either way, it is better than rediscovering the limit after another
-crash.
+tools.
 
 The project can build a complete translated PPSSPP game tree now, including all
 of the message banks and the executable patches. What is left is mostly QA:
